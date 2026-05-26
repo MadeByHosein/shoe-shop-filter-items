@@ -5,14 +5,13 @@ import logo from '/images/logo.png'
 
 const Nav = () => {
   return (
-    <nav className='fixed top-0 right-0 left-0 border border-b-stone-300'>
+    <nav className='fixed top-0 right-0 left-0 z-50 h-23 border border-b-stone-300 bg-white '>
         <div className='flex items-center justify-around '>
-            <div className=''>
+            <div className='overflow-hidden w-20 h-20 sm:max-w-23 sm:max-h-23'>
                             <img 
                                 src={logo} 
                                 alt="logo"
-                                width={120} 
-                                height={120}
+                                className='w-full h-full object-contain'
                             />                       
             </div>
 
