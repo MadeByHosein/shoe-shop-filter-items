@@ -16,7 +16,7 @@ const Input = ({name,title, value}) => {
         />
         
         <div className="flex items-center gap-2">
-          <span className='checkbox block w-4 h-4 border border-stone-300 rounded-full bg-gray-300 transition-opacity duration-300 ease-in-out hover:opacity-60' 
+          <span className='checkbox block w-4 h-4 border border-stone-400 rounded-full bg-gray-300 transition-opacity duration-300 ease-in-out hover:opacity-60' 
               style={name = 'color' && {backgroundColor: value} }
               ></span><span className="text-xs">{title}</span>      
         </div>
