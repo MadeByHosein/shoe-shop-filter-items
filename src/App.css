@@ -1,0 +1,4 @@
+input:checked + div .checkbox {
+    background-color: #2196f3;
+    border: 5px solid gainsboro;
+}

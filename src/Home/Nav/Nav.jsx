@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from 'react-icons/ai'
 import { FiHeart } from 'react-icons/fi'
 import logo from '/images/logo.png'
-
+import  {ProductContext , ProductProvider} from '../../components/context/context'
 const Nav = () => {
-  return (
-    <nav className='fixed top-0 right-0 left-0 z-50 h-23 border border-b-stone-300 bg-white '>
+    const { handleInputChange , setQuery , query } = useContext(ProductContext);  
+    return (
+    <nav className='fixed top-0 right-0 left-0 z-50 h-23 border-b border-b-stone-300 bg-white '>
         <div className='flex items-center justify-around '>
-            <div className='overflow-hidden w-20 h-20 sm:max-w-23 sm:max-h-23'>
+            <div className='overflow-hidden w-20 h-20 sm:max-w-24 sm:max-h-24'>
                             <img 
                                 src={logo} 
                                 alt="logo"
@@ -20,6 +21,7 @@ const Nav = () => {
                     <input  type="text" 
                             placeholder='Enter What You Want' 
                             className='w-full border border-none rounded-md bg-gray-200/50 text-gray-900 py-2 px-3 text-sm outline-none'
+                            onChange={handleInputChange}
                         />
                 </div>
             </div>

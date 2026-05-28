@@ -1,12 +1,15 @@
-import React from 'react'
-import InputCard from '../../components/InputCard'
+import Category from "./Category"
+import Colors from "./Colors"
+import Price from "./Price"
+
 
 const Sidebar = () => {
   return (
     <div className='flex mt-23 w-30 h-100 border-r border-r-stone-300 '>
-      <div className=''>
-        <InputCard />
-        sdfsffs
+      <div >
+        <Category />
+        <Price />
+        <Colors />     
       </div>
     </div>
   )
